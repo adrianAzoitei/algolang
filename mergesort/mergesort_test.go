@@ -9,7 +9,7 @@ import (
 
 func TestMergeSort(t *testing.T) {
 	// arrange
-	want := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}
+	want := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}
 	shuffled := make([]int, len(want))
 	perm := rand.Perm(len(want))
 	for i, v := range perm {
