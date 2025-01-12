@@ -15,10 +15,6 @@ func MergeSort(A []int) (sorted []int, err error) {
 		return nil, errors.New("Expected even length input array")
 	}
 
-	if n < 4 {
-		return Merge(A[:n/2], A[n/2:])
-	}
-
 	C, _ := MergeSort(A[0 : n/2])
 	D, _ := MergeSort(A[n/2 : n])
 	return Merge(C, D)
